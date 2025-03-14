@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { title: 'Who We Are', href: '#about' },
-    { title: 'Our Team', href: '#team' },
-    { title: 'Our Projects', href: '#projects' },
-    { title: 'Palmarès', href: '#achievements' },
-    { title: 'Actualités', href: '#news' },
+    { title: 'Who We Are', href: '/about' },
+    { title: 'Our Team', href: '/team' },
+    { title: 'Our Projects', href: '/projects' },
+    { title: 'Palmarès', href: '/achievements' },
+    { title: 'Actualités', href: '/news' },
   ];
 
   return (
@@ -41,22 +42,22 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold text-enactus-gold">ENACTUS</span>
+            <Link to="/" className="flex items-center">
+              <span className="text-2xl font-bold text-enactus-blue">ENACTUS</span>
               <span className="ml-1 text-2xl font-bold text-enactus-darkGray">EMI</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.title}
-                href={link.href}
-                className="text-enactus-darkGray hover:text-enactus-gold font-medium transition-colors"
+                to={link.href}
+                className="text-enactus-darkGray hover:text-enactus-blue font-medium transition-colors"
               >
                 {link.title}
-              </a>
+              </Link>
             ))}
             <Button variant="primary" size="sm">
               Contact Us
@@ -79,14 +80,14 @@ const Navbar = () => {
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md animate-fade-in">
             <div className="flex flex-col space-y-4 px-4 py-6">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.title}
-                  href={link.href}
-                  className="text-enactus-darkGray hover:text-enactus-gold font-medium transition-colors"
+                  to={link.href}
+                  className="text-enactus-darkGray hover:text-enactus-blue font-medium transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.title}
-                </a>
+                </Link>
               ))}
               <Button variant="primary" size="sm" className="w-full">
                 Contact Us

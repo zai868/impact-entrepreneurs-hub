@@ -19,9 +19,9 @@ const Button = ({
   const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
   
   const variants = {
-    primary: "bg-enactus-gold text-white hover:bg-[#e6ae00] focus-visible:ring-enactus-gold",
+    primary: "bg-enactus-blue text-white hover:bg-blue-600 focus-visible:ring-blue-500",
     secondary: "bg-enactus-darkGray text-white hover:bg-[#394454] focus-visible:ring-enactus-darkGray",
-    outline: "border border-enactus-gold text-enactus-gold hover:bg-enactus-gold/10 focus-visible:ring-enactus-gold",
+    outline: "border border-enactus-blue text-enactus-blue hover:bg-blue-50 focus-visible:ring-blue-500",
   };
   
   const sizes = {

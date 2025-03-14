@@ -1,19 +1,19 @@
 
 import React from 'react';
 import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
+import TeamSection from '../components/TeamSection';
 import Footer from '../components/Footer';
 
-const Index = () => {
+const Team = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <AboutSection />
+      <div className="pt-20">
+        <TeamSection />
+      </div>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Team;

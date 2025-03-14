@@ -63,10 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-                // Enactus EMI Colors
+                // Enactus EMI Colors - Updated with less yellow
                 enactus: {
-                    gold: '#FFC000',
+                    gold: '#d4a017', // Darker gold, less yellow
+                    blue: '#3B82F6', // Added blue as an accent color
                     darkGray: '#4A5568',
+                    lightGray: '#E5E7EB',
+                    mediumGray: '#9CA3AF',
                 }
 			},
 			borderRadius: {
@@ -112,10 +115,10 @@ export default {
                         maxWidth: '65ch',
                         color: 'inherit',
                         a: {
-                            color: '#FFC000',
+                            color: '#3B82F6', // Updated to blue instead of gold
                             textDecoration: 'underline',
                             '&:hover': {
-                                color: '#e6ae00',
+                                color: '#2563EB',
                             },
                         },
                         strong: {
