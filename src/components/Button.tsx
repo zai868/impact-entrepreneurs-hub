@@ -3,7 +3,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'gold';
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   className?: string;
@@ -21,7 +21,8 @@ const Button = ({
   const variants = {
     primary: "bg-enactus-blue text-white hover:bg-blue-600 focus-visible:ring-blue-500",
     secondary: "bg-enactus-darkGray text-white hover:bg-[#394454] focus-visible:ring-enactus-darkGray",
-    outline: "border border-enactus-blue text-enactus-blue hover:bg-blue-50 focus-visible:ring-blue-500",
+    outline: "border border-enactus-gold text-enactus-gold hover:bg-enactus-yellow-light focus-visible:ring-enactus-gold",
+    gold: "bg-enactus-gold text-white hover:bg-enactus-yellow-dark focus-visible:ring-enactus-gold",
   };
   
   const sizes = {

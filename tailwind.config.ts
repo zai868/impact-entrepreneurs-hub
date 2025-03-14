@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,10 +62,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-                // Enactus EMI Colors - Updated with less yellow
+                // Enactus EMI Colors - Updated with softer yellow tones
                 enactus: {
-                    gold: '#d4a017', // Darker gold, less yellow
-                    blue: '#3B82F6', // Added blue as an accent color
+                    gold: '#EBAC00', // Warmer, less bright gold
+                    yellow: {
+                        light: '#FEF7CD', // Soft light yellow
+                        medium: '#FFDB63', // Medium yellow
+                        dark: '#E5A20F', // Darker amber
+                    },
+                    blue: '#3B82F6', // Keeping the blue as is
                     darkGray: '#4A5568',
                     lightGray: '#E5E7EB',
                     mediumGray: '#9CA3AF',

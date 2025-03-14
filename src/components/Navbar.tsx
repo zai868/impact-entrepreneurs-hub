@@ -29,6 +29,7 @@ const Navbar = () => {
     { title: 'Our Team', href: '/team' },
     { title: 'Our Projects', href: '/projects' },
     { title: 'Palmarès', href: '/achievements' },
+    { title: 'Publications', href: '/publications' },
     { title: 'Actualités', href: '/news' },
   ];
 
